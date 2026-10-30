@@ -80,6 +80,23 @@ I'm a Senior OCI Engineer at **Rihal**, designing and maintaining Oracle Cloud I
 
 </details>
 
+## CI/CD Labs
+
+GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a working pipeline with tests, rollback and a write-up.
+
+| Lab | What it demonstrates | Status |
+|:--|:--|:--|
+| [`jenkins-static-site-deploy`](https://github.com/abdulzaferdevops/jenkins-static-site-deploy) | Webhook-triggered deploys, atomic release switch, live verification, one-click rollback, least-privilege deploy user | ✅ Done |
+| `jenkins-flask-api-pipeline` | Lint and test gates, systemd service, health check with automatic rollback | Planned |
+| `jenkins-java-app-pipeline` | Maven in Docker build agents, JUnit reports, artifact management | Planned |
+| `docker-build-push-ocir` | Multi-stage images tagged by commit, pushed to OCI Container Registry | Planned |
+| `app-server-podman-deploy` | Pull-based container deploys with Podman and systemd on Oracle Linux 9 | Planned |
+| `jenkins-shared-library` | Versioned, reusable pipeline steps across all labs | Planned |
+| `blue-green-nginx-deploy` | Zero-downtime releases by switching nginx upstreams | Planned |
+| `jenkins-pr-checks-security-gates` | PR status checks, secrets and image scanning, branch protection | Planned |
+| `jenkins-config-as-code` | Jenkins rebuilt from code, backups to OCI Object Storage, restore drill | Planned |
+| `cicd-observability-oci` | OCI Logging, Monitoring and Alarms for deploys | Planned |
+
 ## OCI Labs
 
 Reference builds of the patterns I use at work, rebuilt from scratch with no client data. Each repo ships Terraform, an architecture diagram and a teardown script.
