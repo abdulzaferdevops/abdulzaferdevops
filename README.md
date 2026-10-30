@@ -7,7 +7,7 @@
 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:C74634&height=190&section=header&text=Abdul%20Zafer&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Senior%20Oracle%20Cloud%20Infrastructure%20Engineer&descSize=18&descAlignY=58&animation=fadeIn" alt="Abdul Zafer, Senior Oracle Cloud Infrastructure Engineer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:C74634&height=190&section=header&text=Abdul%20Zafer&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Senior%20Oracle%20Cloud%20Infrastructure%20Engineer&descSize=18&descAlignY=58" alt="Abdul Zafer, Senior Oracle Cloud Infrastructure Engineer" width="100%" />
 </p>
 
 <p align="center"><b>OCI Architect · Multi-Cloud &amp; Hybrid Infrastructure · Muscat, Oman</b></p>
