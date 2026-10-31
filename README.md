@@ -91,7 +91,7 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | [`jenkins-java-app-pipeline`](https://github.com/abdulzaferdevops/jenkins-java-app-pipeline) | Maven in Docker build agents, JUnit and JaCoCo coverage gate, checksum-verified JAR artefacts, release-aware health check with automatic rollback | ✅ Done |
 | [`docker-build-push-ocir`](https://github.com/abdulzaferdevops/docker-build-push-ocir) | Multi-stage non-root image, tests inside the build, Trivy gate (fixed 4 HIGH, −36 MB), pushed to OCI Container Registry by digest | ✅ Done |
 | [`app-server-podman-deploy`](https://github.com/abdulzaferdevops/app-server-podman-deploy) | Rootless Podman + Quadlet, deploy by digest with no sudo, chained from Lab 4 for one-push CD, automatic and on-demand rollback | ✅ Done |
-| `jenkins-shared-library` | Versioned, reusable pipeline steps across all labs | Planned |
+| [`jenkins-shared-library`](https://github.com/abdulzaferdevops/jenkins-shared-library) | Versioned `@Library` (tag-pinned), tested shell helpers, injection-safe SSH, docs-only deploy skip; first consumer Lab 1 | ✅ Done |
 | `blue-green-nginx-deploy` | Zero-downtime releases by switching nginx upstreams | Planned |
 | `jenkins-pr-checks-security-gates` | PR status checks, secrets and image scanning, branch protection | Planned |
 | `jenkins-config-as-code` | Jenkins rebuilt from code, backups to OCI Object Storage, restore drill | Planned |
