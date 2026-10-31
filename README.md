@@ -89,7 +89,7 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | [`jenkins-static-site-deploy`](https://github.com/abdulzaferdevops/jenkins-static-site-deploy) | Webhook-triggered deploys, atomic release switch, live verification, one-click rollback, least-privilege deploy user | ✅ Done |
 | [`jenkins-flask-api-pipeline`](https://github.com/abdulzaferdevops/jenkins-flask-api-pipeline) | Lint and test gates, systemd service, health check with automatic rollback | ✅ Done |
 | [`jenkins-java-app-pipeline`](https://github.com/abdulzaferdevops/jenkins-java-app-pipeline) | Maven in Docker build agents, JUnit and JaCoCo coverage gate, checksum-verified JAR artefacts, release-aware health check with automatic rollback | ✅ Done |
-| `docker-build-push-ocir` | Multi-stage images tagged by commit, pushed to OCI Container Registry | Planned |
+| [`docker-build-push-ocir`](https://github.com/abdulzaferdevops/docker-build-push-ocir) | Multi-stage non-root image, tests inside the build, Trivy gate (fixed 4 HIGH, −36 MB), pushed to OCI Container Registry by digest | ✅ Done |
 | `app-server-podman-deploy` | Pull-based container deploys with Podman and systemd on Oracle Linux 9 | Planned |
 | `jenkins-shared-library` | Versioned, reusable pipeline steps across all labs | Planned |
 | `blue-green-nginx-deploy` | Zero-downtime releases by switching nginx upstreams | Planned |
