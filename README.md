@@ -87,7 +87,7 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | Lab | What it demonstrates | Status |
 |:--|:--|:--|
 | [`jenkins-static-site-deploy`](https://github.com/abdulzaferdevops/jenkins-static-site-deploy) | Webhook-triggered deploys, atomic release switch, live verification, one-click rollback, least-privilege deploy user | ✅ Done |
-| `jenkins-flask-api-pipeline` | Lint and test gates, systemd service, health check with automatic rollback | Planned |
+| [`jenkins-flask-api-pipeline`](https://github.com/abdulzaferdevops/jenkins-flask-api-pipeline) | Lint and test gates, systemd service, health check with automatic rollback | ✅ Done |
 | `jenkins-java-app-pipeline` | Maven in Docker build agents, JUnit reports, artifact management | Planned |
 | `docker-build-push-ocir` | Multi-stage images tagged by commit, pushed to OCI Container Registry | Planned |
 | `app-server-podman-deploy` | Pull-based container deploys with Podman and systemd on Oracle Linux 9 | Planned |
