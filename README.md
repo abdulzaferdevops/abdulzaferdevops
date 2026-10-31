@@ -90,7 +90,7 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | [`jenkins-flask-api-pipeline`](https://github.com/abdulzaferdevops/jenkins-flask-api-pipeline) | Lint and test gates, systemd service, health check with automatic rollback | ✅ Done |
 | [`jenkins-java-app-pipeline`](https://github.com/abdulzaferdevops/jenkins-java-app-pipeline) | Maven in Docker build agents, JUnit and JaCoCo coverage gate, checksum-verified JAR artefacts, release-aware health check with automatic rollback | ✅ Done |
 | [`docker-build-push-ocir`](https://github.com/abdulzaferdevops/docker-build-push-ocir) | Multi-stage non-root image, tests inside the build, Trivy gate (fixed 4 HIGH, −36 MB), pushed to OCI Container Registry by digest | ✅ Done |
-| `app-server-podman-deploy` | Pull-based container deploys with Podman and systemd on Oracle Linux 9 | Planned |
+| [`app-server-podman-deploy`](https://github.com/abdulzaferdevops/app-server-podman-deploy) | Rootless Podman + Quadlet, deploy by digest with no sudo, chained from Lab 4 for one-push CD, automatic and on-demand rollback | ✅ Done |
 | `jenkins-shared-library` | Versioned, reusable pipeline steps across all labs | Planned |
 | `blue-green-nginx-deploy` | Zero-downtime releases by switching nginx upstreams | Planned |
 | `jenkins-pr-checks-security-gates` | PR status checks, secrets and image scanning, branch protection | Planned |
