@@ -92,7 +92,7 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | [`docker-build-push-ocir`](https://github.com/abdulzaferdevops/docker-build-push-ocir) | Multi-stage non-root image, tests inside the build, Trivy gate (fixed 4 HIGH, −36 MB), pushed to OCI Container Registry by digest | ✅ Done |
 | [`app-server-podman-deploy`](https://github.com/abdulzaferdevops/app-server-podman-deploy) | Rootless Podman + Quadlet, deploy by digest with no sudo, chained from Lab 4 for one-push CD, automatic and on-demand rollback | ✅ Done |
 | [`jenkins-shared-library`](https://github.com/abdulzaferdevops/jenkins-shared-library) | Versioned `@Library` (tag-pinned), tested shell helpers, injection-safe SSH, docs-only deploy skip; first consumer Lab 1 | ✅ Done |
-| `blue-green-nginx-deploy` | Zero-downtime releases by switching nginx upstreams | Planned |
+| [`blue-green-nginx-deploy`](https://github.com/abdulzaferdevops/blue-green-nginx-deploy) | Blue-green behind nginx: preview-tested idle slot, zero failed requests across 630 during the switch, 1.2 s rollback, least-privilege switch via a 2-command sudo rule | ✅ Done |
 | `jenkins-pr-checks-security-gates` | PR status checks, secrets and image scanning, branch protection | Planned |
 | `jenkins-config-as-code` | Jenkins rebuilt from code, backups to OCI Object Storage, restore drill | Planned |
 | `cicd-observability-oci` | OCI Logging, Monitoring and Alarms for deploys | Planned |
