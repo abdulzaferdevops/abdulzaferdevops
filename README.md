@@ -26,7 +26,7 @@ I'm a Senior OCI Engineer at **Rihal**, designing and maintaining Oracle Cloud I
 ## Currently
 
 - **Day job:** OCI hub-and-spoke network architectures for enterprise customers at Rihal.
-- **Building to learn:** Docker on OCI (supply-chain security, Vault secrets, Container Instances) · OKE autoscaling patterns · a reusable Terraform module library for OCI. See [Docker Labs](#docker-labs) and [OCI Labs](#oci-labs).
+- **Building to learn:** Docker on OCI (supply-chain security, Vault secrets, Container Instances) · Kubernetes on OKE (Workload Identity, GitOps, autoscaling) · a reusable Terraform module library for OCI. See [Docker Labs](#docker-labs), [Kubernetes Labs](#kubernetes-labs) and [OCI Labs](#oci-labs).
 - **Open to:** Staff / Principal OCI Engineer · Platform Engineering · Cloud Architect roles. Based in Muscat; open to GCC, remote or relocation.
 - **Latest certification:** OCI 2026 Certified Architect Associate (10/2026).
 
@@ -114,6 +114,24 @@ Docker Engine on Oracle Linux in OCI, from single images to production patterns:
 | `oci-container-instances-deploy` | Same image on Compute + Load Balancer vs OCI Container Instances, provisioned with Terraform, with a cost and ops comparison | Planned |
 | `docker-observability-oci` | Container logs to OCI Logging, cAdvisor + Prometheus + Grafana metrics, OCI Alarms on unhealthy containers | Planned |
 
+## Kubernetes Labs
+
+Kubernetes on OCI Kubernetes Engine (OKE), from a private Terraform-built cluster to day-2 operations: identity, ingress, GitOps, autoscaling, backup and upgrades. Builds on the Docker Labs images in OCIR; each lab ships Terraform and manifests or Helm charts, measured results and a teardown script.
+
+<!-- Turn each repo name into a link only once it is public. Status: ✅ Done · 🚧 In progress · Planned -->
+
+| Lab | What it demonstrates | Status |
+|:--|:--|:--|
+| `oke-cluster-terraform` | Private OKE cluster with Terraform: private API endpoint, VCN-native pod networking, managed node pools spread across fault domains, Bastion access, NSGs per tier | Planned |
+| `oke-workload-identity-vault` | OKE Workload Identity so pods call OCI APIs without keys; secrets from OCI Vault through the Secrets Store CSI driver | Planned |
+| `oke-ingress-tls` | OCI Native Ingress Controller on an OCI Load Balancer, cert-manager TLS, WAF in front, NSG-scoped exposure | Planned |
+| `oke-gitops-argocd` | Argo CD GitOps from Git to cluster, images pulled from OCIR by digest, Kyverno admission that only runs Cosign-signed images | Planned |
+| `oke-network-policies` | Default-deny NetworkPolicies, namespace isolation, tested allow-lists between app, API and database tiers | Planned |
+| `oke-autoscaling-patterns` | HPA, Cluster Autoscaler on node pools, and virtual nodes compared under load, with cost notes | Planned |
+| `oke-storage-backup` | Block Volume and File Storage CSI, Velero backups to OCI Object Storage, timed restore drill | Planned |
+| `oke-observability` | Container logs to OCI Logging, Prometheus + Grafana metrics, OCI Alarms and Notifications on failing workloads | Planned |
+| `oke-zero-downtime-upgrades` | Kubernetes version upgrade with node pool cycling, PodDisruptionBudgets and readiness probes; failed requests measured during the upgrade | Planned |
+
 ## OCI Labs
 
 Reference builds of the patterns I use at work, rebuilt from scratch with no client data. Each repo ships Terraform, an architecture diagram and a teardown script.
@@ -130,7 +148,6 @@ Reference builds of the patterns I use at work, rebuilt from scratch with no cli
 | `oci-security-baseline` | CIS hardening with Cloud Guard, Security Zones, Vault, Certificates, Vulnerability Scanning | Planned |
 | `oci-observability` | Monitoring, Alarms, Notifications, Logging, Logging Analytics, Service Connector Hub, APM end to end | Planned |
 | `oci-cross-region-dr` | Full Stack Disaster Recovery plans, cross-region backup, failover and switchback runbook | Planned |
-| `oke-autoscaling-patterns` | OKE node-pool and pod autoscaling patterns with cost notes | Planned |
 | `oci-devops-pipelines` | OCI DevOps build and deploy pipelines to OKE, OCI Functions and API Gateway | Planned |
 
 ## Certifications
