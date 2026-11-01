@@ -26,7 +26,7 @@ I'm a Senior OCI Engineer at **Rihal**, designing and maintaining Oracle Cloud I
 ## Currently
 
 - **Day job:** OCI hub-and-spoke network architectures for enterprise customers at Rihal.
-- **Building to learn:** OKE autoscaling patterns · a reusable Terraform module library for OCI · OCI DevOps pipelines. See [OCI Labs](#oci-labs).
+- **Building to learn:** Docker on OCI (supply-chain security, Vault secrets, Container Instances) · OKE autoscaling patterns · a reusable Terraform module library for OCI. See [Docker Labs](#docker-labs) and [OCI Labs](#oci-labs).
 - **Open to:** Staff / Principal OCI Engineer · Platform Engineering · Cloud Architect roles. Based in Muscat; open to GCC, remote or relocation.
 - **Latest certification:** OCI 2026 Certified Architect Associate (10/2026).
 
@@ -41,7 +41,7 @@ I'm a Senior OCI Engineer at **Rihal**, designing and maintaining Oracle Cloud I
 | **Security & Governance** | OCI IAM / IDCS Identity Domains · Policies · Dynamic groups · Federation & SSO with Azure AD and on-premises AD · SAML / OAuth2 · MFA · RBAC<br>Cloud Guard · Security Zones · Vault · Certificates · Vulnerability Scanning · CIS hardening |
 | **Migration & DR** | ![VMware vSphere](https://img.shields.io/badge/VMware_vSphere-607078?style=for-the-badge) ![Hyper-V](https://img.shields.io/badge/Hyper--V-0078D4?style=for-the-badge)<br>On-premises → OCI lift-and-shift · Native OCI backup · Cross-region DR · Full Stack Disaster Recovery |
 | **Observability** | Monitoring · Alarms · Notifications · Logging · Logging Analytics · Service Connector Hub · APM |
-| **IaC & Automation** | ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white) ![OCI Resource Manager](https://img.shields.io/badge/OCI_Resource_Manager-C74634?style=for-the-badge) ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)<br>CI/CD |
+| **IaC & Automation** | ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white) ![OCI Resource Manager](https://img.shields.io/badge/OCI_Resource_Manager-C74634?style=for-the-badge) ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)<br>![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)<br>CI/CD · Docker Compose · Trivy · Cosign · SBOM |
 
 ## Selected work
 
@@ -96,6 +96,23 @@ GitHub → Jenkins → Docker → Oracle Linux app server on OCI. Each lab is a 
 | `jenkins-pr-checks-security-gates` | PR status checks, secrets and image scanning, branch protection | Planned |
 | `jenkins-config-as-code` | Jenkins rebuilt from code, backups to OCI Object Storage, restore drill | Planned |
 | `cicd-observability-oci` | OCI Logging, Monitoring and Alarms for deploys | Planned |
+
+## Docker Labs
+
+Docker Engine on Oracle Linux in OCI, from single images to production patterns: supply-chain security, secrets, networking and OCI-native runtimes. Builds on CI/CD Labs 4 and 5; each lab ships a Compose or Terraform setup, measured results and a teardown script.
+
+<!-- Turn each repo name into a link only once it is public. Status: ✅ Done · 🚧 In progress · Planned -->
+
+| Lab | What it demonstrates | Status |
+|:--|:--|:--|
+| `docker-compose-multi-service` | App + Postgres + nginx with health-gated startup, named volumes, isolated networks, `.env` handling, backup and restore of the data volume | Planned |
+| `docker-image-hardening` | Slim vs Alpine vs distroless compared on size and CVE count; non-root, read-only root filesystem, dropped capabilities, `no-new-privileges` | Planned |
+| `docker-supply-chain-security` | SBOM with Syft, Grype scan gate, Cosign-signed images in OCI Container Registry, signature verified before every deploy | Planned |
+| `docker-multi-arch-builds` | Buildx images for amd64 and arm64 (OCI Ampere A1), build cache, one multi-arch manifest in OCIR | Planned |
+| `docker-networking-deep-dive` | Bridge, host and user-defined networks, container DNS, nginx reverse proxy with TLS, NSG rules for the host | Planned |
+| `docker-secrets-oci-vault` | Runtime secrets from OCI Vault via instance principals: no credentials in images, env files or Git | Planned |
+| `oci-container-instances-deploy` | Same image on Compute + Load Balancer vs OCI Container Instances, provisioned with Terraform, with a cost and ops comparison | Planned |
+| `docker-observability-oci` | Container logs to OCI Logging, cAdvisor + Prometheus + Grafana metrics, OCI Alarms on unhealthy containers | Planned |
 
 ## OCI Labs
 
